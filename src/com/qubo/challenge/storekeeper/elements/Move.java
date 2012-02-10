@@ -3,7 +3,7 @@ package com.qubo.challenge.storekeeper.elements;
 import java.text.MessageFormat;
 
 /**
- * ƒvƒŒ[ƒ„[‚ÌuˆÚ“®v‚ğ•\Œ»‚µ‚½ƒNƒ‰ƒX
+ * ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ã®ã€Œç§»å‹•ã€ã‚’è¡¨ç¾ã—ãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 class Move {
@@ -11,14 +11,14 @@ class Move {
 	private final Position delta;
 
 	/**
-	 * ˆÚ“®—Ê‚ğ•\‚µ‚½{@link Position}ƒIƒuƒWƒFƒNƒg‚ğæ“¾‚·‚é
+	 * ç§»å‹•é‡ã‚’è¡¨ã—ãŸ{@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã™ã‚‹
 	 * @return
 	 */
 	Position getDelta() {
 		return delta;
 	}
 	/**
-	 * ˆÚ“®‚É‰×•¨‚ğ“®‚©‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğæ“¾‚·‚é
+	 * ç§»å‹•æ™‚ã«è·ç‰©ã‚’å‹•ã‹ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’å–å¾—ã™ã‚‹
 	 * @return
 	 */
 	boolean shouldPushStuff() {
@@ -26,9 +26,9 @@ class Move {
 	}
 
 	/**
-	 * •W€‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param delta ˆÚ“®—Ê
-	 * @param shouldPushStuff ‰×•¨‚ğ“®‚©‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©
+	 * æ¨™æº–ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param delta ç§»å‹•é‡
+	 * @param shouldPushStuff è·ç‰©ã‚’å‹•ã‹ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹
 	 */
 	Move(Position delta, boolean shouldPushStuff) {
 		this.delta = delta;
@@ -36,7 +36,7 @@ class Move {
 	}
 
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

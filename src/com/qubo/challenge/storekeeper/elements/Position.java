@@ -3,48 +3,48 @@ package com.qubo.challenge.storekeeper.elements;
 import java.text.MessageFormat;
 
 /**
- * ƒQ[ƒ€ƒ}ƒbƒv‚ÌˆÊ’u‚âˆÚ“®—Ê‚ğ•\Œ»‚µ‚½ƒNƒ‰ƒX
+ * ã‚²ãƒ¼ãƒ ãƒãƒƒãƒ—ã®ä½ç½®ã‚„ç§»å‹•é‡ã‚’è¡¨ç¾ã—ãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class Position {
 	/**
-	 * ã‚Ö‚Ì1ƒZƒ‹•ª‚ÌˆÚ“®‚ğ•\‚·
+	 * ä¸Šã¸ã®1ã‚»ãƒ«åˆ†ã®ç§»å‹•ã‚’è¡¨ã™
 	 */
 	public static final Position UP = new Position(-1, 0);
 	/**
-	 * ‰º‚Ö‚Ì1ƒZƒ‹•ª‚ÌˆÚ“®‚ğ•\‚·
+	 * ä¸‹ã¸ã®1ã‚»ãƒ«åˆ†ã®ç§»å‹•ã‚’è¡¨ã™
 	 */
 	public static final Position DOWN = new Position(1, 0);
 	/**
-	 * ¶‚Ö‚Ì1ƒZƒ‹•ª‚ÌˆÚ“®‚ğ•\‚·
+	 * å·¦ã¸ã®1ã‚»ãƒ«åˆ†ã®ç§»å‹•ã‚’è¡¨ã™
 	 */
 	public static final Position LEFT = new Position(0, -1);
 	/**
-	 * ‰E‚Ö‚Ì1ƒZƒ‹•ª‚ÌˆÚ“®‚ğ•\‚·
+	 * å³ã¸ã®1ã‚»ãƒ«åˆ†ã®ç§»å‹•ã‚’è¡¨ã™
 	 */
 	public static final Position RIGHT = new Position(0, 1);
 
 	private final int row;
 	private final int col;
 	/**
-	 * s‚ÌˆÊ’u‚ğæ“¾‚·‚é
-	 * @return s‚ÌˆÊ’u
+	 * è¡Œã®ä½ç½®ã‚’å–å¾—ã™ã‚‹
+	 * @return è¡Œã®ä½ç½®
 	 */
 	public int getRow() {
 		return row;
 	}
 	/**
-	 * —ñ‚ÌˆÊ’u‚ğæ“¾‚·‚é
-	 * @return —ñ‚ÌˆÊ’u
+	 * åˆ—ã®ä½ç½®ã‚’å–å¾—ã™ã‚‹
+	 * @return åˆ—ã®ä½ç½®
 	 */
 	public int getCol() {
 		return col;
 	}
 
 	/**
-	 * •W€‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param row —ñ‚ÌˆÊ’u
-	 * @param col s‚ÌˆÊ’u
+	 * æ¨™æº–ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param row åˆ—ã®ä½ç½®
+	 * @param col è¡Œã®ä½ç½®
 	 */
 	public Position(int row, int col) {
 		this.row = row;
@@ -52,23 +52,23 @@ public class Position {
 	}
 
 	/**
-	 * ©•ª©g‚ÉA{@code other}‚ğˆÚ“®—Ê‚Æ‚µ‚Ä’Ç‰Á‚µ‚½{@link Position}ƒIƒuƒWƒFƒNƒg‚ğAV‹Kì¬‚µ‚Ä•Ô‚·
-	 * @param other ˆÚ“®—Ê
-	 * @return {@link Position}ƒIƒuƒWƒFƒNƒg
+	 * è‡ªåˆ†è‡ªèº«ã«ã€{@code other}ã‚’ç§»å‹•é‡ã¨ã—ã¦è¿½åŠ ã—ãŸ{@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ã€æ–°è¦ä½œæˆã—ã¦è¿”ã™
+	 * @param other ç§»å‹•é‡
+	 * @return {@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Position add(Position other) {
 		return new Position(this.row + other.row, this.col + other.col);
 	}
 	/**
-	 * ©•ª©g‚Æ‹t‚ÌˆÚ“®—Ê‚ğ‚Â{@link Position}ƒIƒuƒWƒFƒNƒg‚ğAV‹Kì¬‚µ‚Ä•Ô‚·
-	 * @return {@link Position}ƒIƒuƒWƒFƒNƒg
+	 * è‡ªåˆ†è‡ªèº«ã¨é€†ã®ç§»å‹•é‡ã‚’æŒã¤{@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ã€æ–°è¦ä½œæˆã—ã¦è¿”ã™
+	 * @return {@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Position reverse() {
 		return new Position(-row, -col);
 	}
 
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -80,7 +80,7 @@ public class Position {
 		return false;
 	}
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override public String toString() { return MessageFormat.format("[R{0}C{1}]", row, col); }

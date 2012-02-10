@@ -9,50 +9,50 @@ import com.qubo.challenge.storekeeper.elements.Direction;
 import com.qubo.challenge.storekeeper.elements.StoreKeeper;
 
 /**
- * ƒRƒ“ƒ\[ƒ‹ƒvƒƒOƒ‰ƒ€‚Æ‚µ‚Ä‘qŒÉ”Ô‚ğƒvƒŒƒC‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX
+ * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨ã—ã¦å€‰åº«ç•ªã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class ConsoleGame {
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—Í‚ÌƒLƒƒƒ“ƒZƒ‹•¶šiHj
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ã®ã‚­ãƒ£ãƒ³ã‚»ãƒ«æ–‡å­—ï¼ˆï¼Ÿï¼‰
 	 */
 	private static final char COMMAND_CANCEL = '!';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFuã‚ÉˆÚ“®v
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œä¸Šã«ç§»å‹•ã€
 	 */
 	public static final char COMMAND_MOVE_UP = 'w';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFu‰º‚ÉˆÚ“®v
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œä¸‹ã«ç§»å‹•ã€
 	 */
 	public static final char COMMAND_MOVE_DOWN = 's';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFu¶‚ÉˆÚ“®v
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œå·¦ã«ç§»å‹•ã€
 	 */
 	public static final char COMMAND_MOVE_LEFT = 'a';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFu‰E‚ÉˆÚ“®v
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œå³ã«ç§»å‹•ã€
 	 */
 	public static final char COMMAND_MOVE_RIGHT = 'd';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFu‚â‚è’¼‚µv
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œã‚„ã‚Šç›´ã—ã€
 	 */
 	public static final char COMMAND_UNDO = 'u';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFuƒŠƒZƒbƒgv
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œãƒªã‚»ãƒƒãƒˆã€
 	 */
 	public static final char COMMAND_RESET = '@';
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹“ü—ÍFu’†’fv
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ï¼šã€Œä¸­æ–­ã€
 	 */
 	public static final char COMMAND_QUIT = '_';
 	/**
-	 * ã‰º¶‰E‚ÌˆÚ“®ŒnƒRƒ“ƒ\[ƒ‹“ü—Í‚ğ•¶š—ñ‚Æ‚µ‚Ä˜AŒ‹‚µ‚½‚à‚Ì
+	 * ä¸Šä¸‹å·¦å³ã®ç§»å‹•ç³»ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ã‚’æ–‡å­—åˆ—ã¨ã—ã¦é€£çµã—ãŸã‚‚ã®
 	 */
 	private static final String COMMAND_MOVES = "" + COMMAND_MOVE_UP + COMMAND_MOVE_DOWN + COMMAND_MOVE_LEFT + COMMAND_MOVE_RIGHT;
 
 	/**
-	 * ‘qŒÉ”Ô‚ğƒvƒŒƒC‚·‚é
-	 * @param path ƒQ[ƒ€ƒtƒ@ƒCƒ‹‚ÌƒpƒX
+	 * å€‰åº«ç•ªã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹
+	 * @param path ã‚²ãƒ¼ãƒ ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹
 	 * @throws IOException
 	 */
 	public void play(String path) throws IOException {
@@ -84,47 +84,47 @@ public class ConsoleGame {
 	}
 
 	/**
-	 * ƒQ[ƒ€‹N“®‰æ–Ê‚ğ•\¦‚·‚é
+	 * ã‚²ãƒ¼ãƒ èµ·å‹•ç”»é¢ã‚’è¡¨ç¤ºã™ã‚‹
 	 */
 	private void showSplash() {
-		System.out.println("QQQQ¡¡¡QQQQQQQQQQQ¡QQQQQQQQQQQQ¡¡QQ");
-		System.out.println("QQQ¡QQQ¡QQQQQ¡¡¡¡¡¡¡¡¡¡QQQ¡¡¡¡¡Q¡QQ");
-		System.out.println("QQ¡Q¡¡¡Q¡QQQQ¡QQQQ¡QQQQQQQQ¡Q¡Q¡QQQ");
-		System.out.println("¡¡QQQQQQQ¡¡QQ¡¡¡¡¡¡¡¡¡¡Q¡¡¡¡¡¡¡¡¡¡¡");
-		System.out.println("QQ¡¡¡¡¡¡¡QQQQ¡Q¡QQ¡QQ¡QQQQQ¡Q¡Q¡QQQ");
-		System.out.println("QQ¡QQQQQ¡QQQQ¡Q¡¡¡¡¡¡¡QQQQ¡QQ¡QQ¡QQ");
-		System.out.println("QQ¡¡¡¡¡¡¡QQQQ¡Q¡QQ¡QQ¡QQ¡¡¡¡¡¡¡¡¡¡¡");
-		System.out.println("QQ¡QQQQQQQQQQ¡Q¡¡¡¡¡¡¡QQQQ¡QQ¡QQ¡QQ");
-		System.out.println("Q¡Q¡¡¡¡¡¡QQQQ¡QQQQ¡QQQQQQQ¡¡¡¡¡¡¡QQ");
-		System.out.println("¡QQ¡QQQQ¡QQQ¡Q¡¡¡¡¡¡¡¡¡QQQ¡QQ¡QQ¡QQ");
-		System.out.println("QQQ¡¡¡¡¡¡QQQ¡QQQQQ¡QQQQQQQ¡¡¡¡¡¡¡QQ");
-		System.out.println("QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ");
+		System.out.println("ï¼¿ï¼¿ï¼¿ï¼¿â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– â– â– â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿â– â– â– â– â– ï¼¿â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿â– ï¼¿â– â– â– ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– ï¼¿â– ï¼¿ï¼¿ï¼¿");
+		System.out.println("â– â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– â– ï¼¿ï¼¿â– â– â– â– â– â– â– â– â– â– ï¼¿â– â– â– â– â– â– â– â– â– â– â– ");
+		System.out.println("ï¼¿ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– ï¼¿â– ï¼¿ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– â– â– â– â– â– â– â– â– â– â– ");
+		System.out.println("ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿â– ï¼¿â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿");
+		System.out.println("â– ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿â– ï¼¿â– â– â– â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿ï¼¿â– â– â– â– â– â– ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿â– â– â– â– â– â– â– ï¼¿ï¼¿");
+		System.out.println("ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿");
 		System.out.println("Please Enter Key... Game Start");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		try { reader.readLine(); } catch (IOException e) { e.printStackTrace(); }
 	}
 
 	/**
-	 * ƒQ[ƒ€I—¹Œã‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
+	 * ã‚²ãƒ¼ãƒ çµ‚äº†å¾Œã®çµæœã‚’è¡¨ç¤ºã™ã‚‹
 	 * @param storeKeeper
 	 */
 	private void showResult(StoreKeeper storeKeeper) {
-		String message = storeKeeper.isCleared() ? "ƒQ[ƒ€ƒNƒŠƒAI‚¨‚ß‚Å‚Æ‚¤II" : "ƒQ[ƒ€‚ğ’†’f‚µ‚Ü‚µ‚½I";
+		String message = storeKeeper.isCleared() ? "ã‚²ãƒ¼ãƒ ã‚¯ãƒªã‚¢ï¼ãŠã‚ã§ã¨ã†ï¼ï¼" : "ã‚²ãƒ¼ãƒ ã‚’ä¸­æ–­ã—ã¾ã—ãŸï¼";
 		System.out.println(message);
 	}
 	/**
-	 * ƒQ[ƒ€‰æ–Ê‚ğ•\¦‚·‚é
+	 * ã‚²ãƒ¼ãƒ ç”»é¢ã‚’è¡¨ç¤ºã™ã‚‹
 	 * @param storeKeeper
 	 */
 	private void render(StoreKeeper storeKeeper) {
 		System.out.println(storeKeeper);
-		System.out.println(MessageFormat.format("ˆÚ“®‰ñ”: {0}", storeKeeper.getStep()));
+		System.out.println(MessageFormat.format("ç§»å‹•å›æ•°: {0}", storeKeeper.getStep()));
 	}
 	/**
-	 * ã‰º¶‰E‚ÌˆÚ“®Œn‚ÌƒRƒ“ƒ\[ƒ‹“ü—Í‚ğA{@link Direction}ƒIƒuƒWƒFƒNƒg‚É•ÏŠ·‚·‚é<br>
-	 * “ü—Í‚ªˆÚ“®Œn‚Å‚Í‚È‚¢ê‡‚ÍAnull‚ğ•Ô‚·
-	 * @param command ƒRƒ“ƒ\[ƒ‹“ü—Í
-	 * @return {@link Direction}ƒIƒuƒWƒFƒNƒg
+	 * ä¸Šä¸‹å·¦å³ã®ç§»å‹•ç³»ã®ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›ã‚’ã€{@link Direction}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¤‰æ›ã™ã‚‹<br>
+	 * å…¥åŠ›ãŒç§»å‹•ç³»ã§ã¯ãªã„å ´åˆã¯ã€nullã‚’è¿”ã™
+	 * @param command ã‚³ãƒ³ã‚½ãƒ¼ãƒ«å…¥åŠ›
+	 * @return {@link Direction}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	private Direction toDirection(char command) {
 		switch (command) {
@@ -136,16 +136,16 @@ public class ConsoleGame {
 		}
 	}
 	/**
-	 * ƒRƒ“ƒ\[ƒ‹‚©‚çˆê•¶šæ“¾‚·‚éBƒLƒƒƒ“ƒZƒ‹•¶š({@link ConsoleGame#COMMAND_CANCEL})‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éê‡‚Í-1‚ğ•Ô‚·B
-	 * @return ƒRƒ}ƒ“ƒh•¶š
+	 * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã‹ã‚‰ä¸€æ–‡å­—å–å¾—ã™ã‚‹ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«æ–‡å­—({@link ConsoleGame#COMMAND_CANCEL})ãŒå«ã¾ã‚Œã¦ã„ã‚‹å ´åˆã¯-1ã‚’è¿”ã™ã€‚
+	 * @return ã‚³ãƒãƒ³ãƒ‰æ–‡å­—
 	 * @throws IOException
 	 */
 	private char requestCommand() throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println(
-				"ˆÚ“®: (ã->w, ¶->a, ‰º->s, ‰E->d) + Enter"
+				"ç§»å‹•: (ä¸Š->w, å·¦->a, ä¸‹->s, å³->d) + Enter"
 				+ "\r\n"
-				+ "–ß‚·->u, ƒŠƒZƒbƒg->@, ’†’f->_, “ü—ÍƒLƒƒƒ“ƒZƒ‹->!‚ğŠÜ‚ß‚é");
+				+ "æˆ»ã™->u, ãƒªã‚»ãƒƒãƒˆ->@, ä¸­æ–­->_, å…¥åŠ›ã‚­ãƒ£ãƒ³ã‚»ãƒ«->!ã‚’å«ã‚ã‚‹");
 		String line = reader.readLine();
 		if (!line.contains("" + COMMAND_CANCEL) && line.length() > 0) {
 			return line.charAt(0);

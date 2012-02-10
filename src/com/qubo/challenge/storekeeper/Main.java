@@ -3,18 +3,18 @@ package com.qubo.challenge.storekeeper;
 import java.io.IOException;
 
 /**
- * ƒRƒ“ƒ\[ƒ‹ƒvƒƒOƒ‰ƒ€‚ÌƒGƒ“ƒgƒŠƒ|ƒCƒ“ƒg‚ª’è‹`‚³‚ê‚½ƒNƒ‰ƒX
+ * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚¨ãƒ³ãƒˆãƒªãƒã‚¤ãƒ³ãƒˆãŒå®šç¾©ã•ã‚ŒãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class Main {
 	/**
-	 * ƒTƒ“ƒvƒ‹—pƒQ[ƒ€ƒtƒ@ƒCƒ‹
+	 * ã‚µãƒ³ãƒ—ãƒ«ç”¨ã‚²ãƒ¼ãƒ ãƒ•ã‚¡ã‚¤ãƒ«
 	 */
 	private static final String GAMEMAP1 = "gamemap_1.txt";
 	/**
-	 * ƒGƒ“ƒgƒŠƒ|ƒCƒ“ƒgB
-	 * 1”Ô–Ú‚Ìˆø”‚ğƒQ[ƒ€ƒtƒ@ƒCƒ‹–¼‚Æ‚µ‚ÄA{@link ConsoleGame#play(String)}‚ğÀs‚·‚éB
-	 * ˆø”‚ª—^‚¦‚ç‚ê‚Ä‚¢‚È‚¢ê‡‚ÍAƒfƒtƒHƒ‹ƒg‚Ì{@link Main#GAMEMAP1}‚ğƒQ[ƒ€ƒtƒ@ƒCƒ‹–¼‚Æ‚·‚éB
+	 * ã‚¨ãƒ³ãƒˆãƒªãƒã‚¤ãƒ³ãƒˆã€‚
+	 * 1ç•ªç›®ã®å¼•æ•°ã‚’ã‚²ãƒ¼ãƒ ãƒ•ã‚¡ã‚¤ãƒ«åã¨ã—ã¦ã€{@link ConsoleGame#play(String)}ã‚’å®Ÿè¡Œã™ã‚‹ã€‚
+	 * å¼•æ•°ãŒä¸ãˆã‚‰ã‚Œã¦ã„ãªã„å ´åˆã¯ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®{@link Main#GAMEMAP1}ã‚’ã‚²ãƒ¼ãƒ ãƒ•ã‚¡ã‚¤ãƒ«åã¨ã™ã‚‹ã€‚
 	 * @param args
 	 */
 	public static void main(String[] args) {

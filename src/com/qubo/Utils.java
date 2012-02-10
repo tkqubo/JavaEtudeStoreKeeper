@@ -7,12 +7,12 @@ import java.io.IOException;
 import java.util.Iterator;
 
 /**
- * •Ö—˜ŠÖ”‚ğW‚ß‚½ƒNƒ‰ƒX
+ * ä¾¿åˆ©é–¢æ•°ã‚’é›†ã‚ãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class Utils {
 	/**
-	 * {@link Utils#forEachLine(String)}—p‚Ì“à•”ƒNƒ‰ƒX
+	 * {@link Utils#forEachLine(String)}ç”¨ã®å†…éƒ¨ã‚¯ãƒ©ã‚¹
 	 * @author Qubo
 	 */
 	private static final class FileIterator implements Iterator<String> {
@@ -49,10 +49,10 @@ public class Utils {
 		}
 	}
 	/**
-	 * ƒtƒ@ƒCƒ‹“à‚ÌƒeƒLƒXƒg‚ğAs‚²‚Æ‚ÉƒCƒeƒŒ[ƒg‚·‚é{@link Iterable}ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·
-	 * @param path ƒtƒ@ƒCƒ‹‚ÌƒpƒX
-	 * @return {@link Iterable}ƒIƒuƒWƒFƒNƒg
-	 * @throws FileNotFoundException ƒtƒ@ƒCƒ‹‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½‚É”­¶
+	 * ãƒ•ã‚¡ã‚¤ãƒ«å†…ã®ãƒ†ã‚­ã‚¹ãƒˆã‚’ã€è¡Œã”ã¨ã«ã‚¤ãƒ†ãƒ¬ãƒ¼ãƒˆã™ã‚‹{@link Iterable}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™
+	 * @param path ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹
+	 * @return {@link Iterable}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @throws FileNotFoundException ãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸæ™‚ã«ç™ºç”Ÿ
 	 */
 	public static Iterable<String> forEachLine(String path) throws FileNotFoundException {
 		final BufferedReader bufferedReader = new BufferedReader(new FileReader(path));

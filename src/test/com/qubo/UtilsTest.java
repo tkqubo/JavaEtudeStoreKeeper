@@ -14,7 +14,7 @@ public class UtilsTest {
 	private static final String GAMEMAP1 = "gamemap_1.txt";
 	private static final String GAMEMAP_NONEXISTENT = "gamemap_XXXXXXXXXXXXX.txt";
 	private String[] GAME1 = {
-			";‘æ1ƒXƒe[ƒW",
+			";ç¬¬1ã‚¹ãƒ†ãƒ¼ã‚¸",
 			"",
 			"#########",
 			"#       #",
@@ -42,7 +42,7 @@ public class UtilsTest {
 		Iterable<String> forEachLine = null;
 		try {
 			forEachLine = Utils.forEachLine(GAMEMAP_NONEXISTENT);
-			fail("—áŠO‚ª“Š‚°‚ç‚ê‚Ä‚¢‚Ü‚¹‚ñI");
+			fail("ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“ï¼");
 		} catch (FileNotFoundException e) {
 		}
 		assertNull(forEachLine);

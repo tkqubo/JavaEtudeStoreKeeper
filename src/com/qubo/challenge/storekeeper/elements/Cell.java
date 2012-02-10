@@ -1,7 +1,7 @@
 package com.qubo.challenge.storekeeper.elements;
 
 /**
- * ƒQ[ƒ€ƒ}ƒbƒvã‚ÌƒZƒ‹‚ğ•\Œ»‚µ‚½ƒNƒ‰ƒX
+ * ã‚²ãƒ¼ãƒ ãƒãƒƒãƒ—ä¸Šã®ã‚»ãƒ«ã‚’è¡¨ç¾ã—ãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class Cell {
@@ -11,38 +11,38 @@ public class Cell {
 	private final Position position;
 
 	/**
-	 * ƒZƒ‹‚Ì{@link Terrain}ƒIƒuƒWƒFƒNƒg‚ğæ“¾‚·‚é
-	 * @return ƒZƒ‹‚Ì{@link Terrain}ƒIƒuƒWƒFƒNƒg
+	 * ã‚»ãƒ«ã®{@link Terrain}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã™ã‚‹
+	 * @return ã‚»ãƒ«ã®{@link Terrain}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Terrain getTerrain() { return terrain; }
 	/**
-	 * ƒZƒ‹‚ÌŒ»İ‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg‚ğæ“¾‚·‚é
-	 * @return ƒZƒ‹‚ÌŒ»İ‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg
+	 * ã‚»ãƒ«ã®ç¾åœ¨ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã™ã‚‹
+	 * @return ã‚»ãƒ«ã®ç¾åœ¨ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public FieldObject getObject() { return object; }
 	/**
-	 * ƒZƒ‹‚Ì‰Šúó‘Ô‚Å‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg‚ğæ“¾‚·‚é
-	 * @return ƒZƒ‹‚Ì‰Šúó‘Ô‚Å‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg
+	 * ã‚»ãƒ«ã®åˆæœŸçŠ¶æ…‹ã§ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã™ã‚‹
+	 * @return ã‚»ãƒ«ã®åˆæœŸçŠ¶æ…‹ã§ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public FieldObject getOriginalObject() { return originalObject; }
 	/**
-	 * ƒZƒ‹‚ÌˆÊ’u‚ğæ“¾‚·‚é
+	 * ã‚»ãƒ«ã®ä½ç½®ã‚’å–å¾—ã™ã‚‹
 	 * @return position
 	 */
 	public Position getPosition() {
 		return position;
 	}
 	/**
-	 * ƒZƒ‹‚ÌŒ»İ‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg‚ğİ’è‚·‚é
+	 * ã‚»ãƒ«ã®ç¾åœ¨ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã™ã‚‹
 	 * @param object
 	 */
 	void setObject(FieldObject object) { this.object = object; }
 
 	/**
-	 * •W€‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param field ƒZƒ‹‚Ì’nŒ`
-	 * @param object ƒZƒ‹ã‚ÌƒIƒuƒWƒFƒNƒg
-	 * @param position ƒZƒ‹‚ÌˆÊ’u
+	 * æ¨™æº–ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param field ã‚»ãƒ«ã®åœ°å½¢
+	 * @param object ã‚»ãƒ«ä¸Šã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @param position ã‚»ãƒ«ã®ä½ç½®
 	 */
 	public Cell(Terrain field, FieldObject object, Position position) {
 		this.terrain = field;
@@ -52,12 +52,12 @@ public class Cell {
 	}
 
 	/**
-	 * ƒZƒ‹‚ÌŒ»İ‚Ì{@link FieldObject}ƒIƒuƒWƒFƒNƒg‚ğ‰Šúó‘Ô‚É–ß‚·
+	 * ã‚»ãƒ«ã®ç¾åœ¨ã®{@link FieldObject}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’åˆæœŸçŠ¶æ…‹ã«æˆ»ã™
 	 */
 	void reset() { this.object = this.originalObject; }
 	/**
-	 * ƒZƒ‹‚Ìó‘Ô‚ğA•¶š•\Œ»‚Æ‚µ‚Äæ“¾‚·‚é
-	 * @return •¶š•\Œ»‚É‚æ‚éƒZƒ‹‚Ìó‘Ô
+	 * ã‚»ãƒ«ã®çŠ¶æ…‹ã‚’ã€æ–‡å­—è¡¨ç¾ã¨ã—ã¦å–å¾—ã™ã‚‹
+	 * @return æ–‡å­—è¡¨ç¾ã«ã‚ˆã‚‹ã‚»ãƒ«ã®çŠ¶æ…‹
 	 */
 	public char toChar() {
 		char ch;
@@ -86,7 +86,7 @@ public class Cell {
 	}
 
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override public String toString() { return "" + toChar(); }

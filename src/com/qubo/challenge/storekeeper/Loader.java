@@ -13,15 +13,15 @@ import com.qubo.challenge.storekeeper.elements.StoreKeeper;
 import com.qubo.challenge.storekeeper.elements.Terrain;
 
 /**
- * w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹–¼‚©‚çA{@link StoreKeeper}ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚·‚éƒNƒ‰ƒX
+ * æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«åã‹ã‚‰ã€{@link StoreKeeper}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹ã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class Loader {
 	/**
-	 * w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹–¼‚©‚çA{@link StoreKeeper}ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚·‚é
-	 * @param path ƒtƒ@ƒCƒ‹–¼
-	 * @return {@link StoreKeeper}ƒIƒuƒWƒFƒNƒg
-	 * @throws FileNotFoundException ƒtƒ@ƒCƒ‹‚ª‘¶İ‚µ‚È‚©‚Á‚½ê‡‚É”­¶
+	 * æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«åã‹ã‚‰ã€{@link StoreKeeper}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹
+	 * @param path ãƒ•ã‚¡ã‚¤ãƒ«å
+	 * @return {@link StoreKeeper}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @throws FileNotFoundException ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã—ãªã‹ã£ãŸå ´åˆã«ç™ºç”Ÿ
 	 */
 	public StoreKeeper load(String path) throws FileNotFoundException {
 		List<List<Cell>> map = new ArrayList<List<Cell>>();
@@ -48,17 +48,17 @@ public class Loader {
 	}
 
 	/**
-	 * “ü—Ís‚ğˆ—‚¹‚¸ƒXƒLƒbƒv‚·‚é‚©‚Ç‚¤‚©‚ğæ“¾
-	 * @param line “ü—Ís
+	 * å…¥åŠ›è¡Œã‚’å‡¦ç†ã›ãšã‚¹ã‚­ãƒƒãƒ—ã™ã‚‹ã‹ã©ã†ã‹ã‚’å–å¾—
+	 * @param line å…¥åŠ›è¡Œ
 	 * @return
 	 */
 	private boolean shouldSkip(String line) {
 		return line.startsWith(Constants.COMMENT_START) || line.length() == 0;
 	}
 	/**
-	 * {@link List}&lt{@link List}&lt;{@link Cell}&gt;&gt;‚©‚ç{@link Cell}‚Ì“ñŸŒ³”z—ñ‚É•ÏŠ·‚·‚é
-	 * @param matrix {@link List}&lt{@link List}&lt;{@link Cell}&gt;&gt;ƒIƒuƒWƒFƒNƒg
-	 * @param maxLength {@link Cell}‚Ì“ñŸŒ³”z—ñ
+	 * {@link List}&lt{@link List}&lt;{@link Cell}&gt;&gt;ã‹ã‚‰{@link Cell}ã®äºŒæ¬¡å…ƒé…åˆ—ã«å¤‰æ›ã™ã‚‹
+	 * @param matrix {@link List}&lt{@link List}&lt;{@link Cell}&gt;&gt;ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @param maxLength {@link Cell}ã®äºŒæ¬¡å…ƒé…åˆ—
 	 * @return
 	 */
 	private Cell[][] toCells(List<List<Cell>> matrix, int maxLength) {
@@ -72,9 +72,9 @@ public class Loader {
 		return cells;
 	}
 	/**
-	 * —^‚¦‚ç‚ê‚½•¶š‚ğA{@link FieldObject}‚É•ÏŠ·‚·‚é
-	 * @param c •¶š
-	 * @return {@code c}‚É‘Î‰‚·‚é{@link FieldObject}
+	 * ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—ã‚’ã€{@link FieldObject}ã«å¤‰æ›ã™ã‚‹
+	 * @param c æ–‡å­—
+	 * @return {@code c}ã«å¯¾å¿œã™ã‚‹{@link FieldObject}
 	 */
 	private FieldObject toObject(char c) {
 		switch (c) {
@@ -88,9 +88,9 @@ public class Loader {
 		return null;
 	}
 	/**
-	 *  —^‚¦‚ç‚ê‚½•¶š‚ğA{@link Terrain}‚É•ÏŠ·‚·‚é
-	 * @param c •¶š
-	 * @return {@code c}‚É‘Î‰‚·‚é{@link Terrain}
+	 *  ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—ã‚’ã€{@link Terrain}ã«å¤‰æ›ã™ã‚‹
+	 * @param c æ–‡å­—
+	 * @return {@code c}ã«å¯¾å¿œã™ã‚‹{@link Terrain}
 	 */
 	private Terrain toTerrain(char c) {
 		switch (c) {

@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 import java.util.Stack;
 
 /**
- * ‘qŒÉ”ÔƒQ[ƒ€‚ğ•\Œ»‚µ‚½ƒNƒ‰ƒX
+ * å€‰åº«ç•ªã‚²ãƒ¼ãƒ ã‚’è¡¨ç¾ã—ãŸã‚¯ãƒ©ã‚¹
  * @author Qubo
  */
 public class StoreKeeper implements Iterable<Iterable<Cell>> {
@@ -14,8 +14,8 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 	private final Stack<Move> history;
 
 	/**
-	 * •W€‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param cells “ñŸŒ³”z—ñ‚ÌƒZƒ‹î•ñ
+	 * æ¨™æº–ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param cells äºŒæ¬¡å…ƒé…åˆ—ã®ã‚»ãƒ«æƒ…å ±
 	 */
 	public StoreKeeper(Cell[][] cells) {
 		this.cells = cells;
@@ -23,9 +23,9 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 	}
 
 	/**
-	 * ƒQ[ƒ€‚ğƒNƒŠƒA‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğæ“¾B
-	 * ”»’è‚ÍAu‘S‚Ä‚Ìw‰×•¨x‚ªw‰×•¨’u‚«êƒZƒ‹xã‚Éæ‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©v‚Å”»’f‚³‚ê‚éB
-	 * @return ƒQ[ƒ€‚ğƒNƒŠƒA‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©
+	 * ã‚²ãƒ¼ãƒ ã‚’ã‚¯ãƒªã‚¢ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’å–å¾—ã€‚
+	 * åˆ¤å®šã¯ã€ã€Œå…¨ã¦ã®ã€è·ç‰©ã€ãŒã€è·ç‰©ç½®ãå ´ã‚»ãƒ«ã€ä¸Šã«ä¹—ã£ã¦ã„ã‚‹ã‹ã©ã†ã‹ã€ã§åˆ¤æ–­ã•ã‚Œã‚‹ã€‚
+	 * @return ã‚²ãƒ¼ãƒ ã‚’ã‚¯ãƒªã‚¢ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹
 	 */
 	public boolean isCleared() {
 		for (Cell[] row : cells) {
@@ -37,7 +37,7 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		return true;
 	}
 	/**
-	 * ƒQ[ƒ€‚ğƒŠƒZƒbƒg‚µA‘S‚Ä‚Ì”z’u‚ğ‰Šúó‘Ô‚É–ß‚·
+	 * ã‚²ãƒ¼ãƒ ã‚’ãƒªã‚»ãƒƒãƒˆã—ã€å…¨ã¦ã®é…ç½®ã‚’åˆæœŸçŠ¶æ…‹ã«æˆ»ã™
 	 */
 	public void reset() {
 		history.clear();
@@ -48,11 +48,11 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		}
 	}
 	/**
-	 * ƒvƒŒ[ƒ„[‚ğ—^‚¦‚ç‚ê‚½•ûŒü‚Éi‚ß‚é
-	 * @param direction •ûŒü
+	 * ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ã‚’ä¸ãˆã‚‰ã‚ŒãŸæ–¹å‘ã«é€²ã‚ã‚‹
+	 * @param direction æ–¹å‘
 	 * @return
-	 * ˆÚ“®‚ª¬Œ÷‚µ‚½‚©‚Ç‚¤‚©‚ğ•Ô‚·B
-	 * —á‚¦‚Î•Ç‚ÉˆÚ“®‚µ‚æ‚¤‚Æ‚µ‚½ê‡A‚ ‚é‚¢‚Í‰×•¨‚ª×–‚‚ğ‚µ‚Ä‚¢‚éê‡‚É{@code false}‚ğ•Ô‚·B
+	 * ç§»å‹•ãŒæˆåŠŸã—ãŸã‹ã©ã†ã‹ã‚’è¿”ã™ã€‚
+	 * ä¾‹ãˆã°å£ã«ç§»å‹•ã—ã‚ˆã†ã¨ã—ãŸå ´åˆã€ã‚ã‚‹ã„ã¯è·ç‰©ãŒé‚ªé­”ã‚’ã—ã¦ã„ã‚‹å ´åˆã«{@code false}ã‚’è¿”ã™ã€‚
 	 */
 	public boolean move(Direction direction) {
 		Move move = getMove(direction.toPosition());
@@ -65,10 +65,10 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		}
 	}
 	/**
-	 * ’¼‘O‚ÌˆÚ“®‚ğæ‚èÁ‚·
+	 * ç›´å‰ã®ç§»å‹•ã‚’å–ã‚Šæ¶ˆã™
 	 * @return
-	 * ¬Œ÷‚µ‚½‚©‚Ç‚¤‚©‚ğ•Ô‚·B
-	 * —á‚¦‚ÎA‚±‚êˆÈãæ‚èÁ‚µ‚Å‚«‚È‚¢ê‡i‰Šúó‘Ô‚È‚Çj‚Å{@code false}‚ğ•Ô‚·B
+	 * æˆåŠŸã—ãŸã‹ã©ã†ã‹ã‚’è¿”ã™ã€‚
+	 * ä¾‹ãˆã°ã€ã“ã‚Œä»¥ä¸Šå–ã‚Šæ¶ˆã—ã§ããªã„å ´åˆï¼ˆåˆæœŸçŠ¶æ…‹ãªã©ï¼‰ã§{@code false}ã‚’è¿”ã™ã€‚
 	 */
 	public boolean undo() {
 		if (!history.isEmpty()) {
@@ -80,23 +80,23 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		}
 	}
 	/**
-	 * ƒQ[ƒ€ƒ}ƒbƒv‚Ì{@code position}ã‚ÌƒZƒ‹‚ğæ“¾‚·‚é
+	 * ã‚²ãƒ¼ãƒ ãƒãƒƒãƒ—ã®{@code position}ä¸Šã®ã‚»ãƒ«ã‚’å–å¾—ã™ã‚‹
 	 * @param position
-	 * @return ƒQ[ƒ€ƒ}ƒbƒv‚Ì{@code position}ã‚ÌƒZƒ‹
+	 * @return ã‚²ãƒ¼ãƒ ãƒãƒƒãƒ—ã®{@code position}ä¸Šã®ã‚»ãƒ«
 	 */
 	public Cell getCell(Position position) {
 		return cells[position.getRow()][position.getCol()];
 	}
 	/**
-	 * Œ»İ‚ÌƒXƒeƒbƒv”‚ğæ“¾‚·‚é
-	 * @return Œ»İ‚ÌƒXƒeƒbƒv”
+	 * ç¾åœ¨ã®ã‚¹ãƒ†ãƒƒãƒ—æ•°ã‚’å–å¾—ã™ã‚‹
+	 * @return ç¾åœ¨ã®ã‚¹ãƒ†ãƒƒãƒ—æ•°
 	 */
 	public int getStep() { return history.size(); }
 
 	/**
-	 * “à•”—pŠÖ”BƒvƒŒ[ƒ„[‚ğ—^‚¦‚ç‚ê‚½•ûŒü‚Éi‚ß‚éB
+	 * å†…éƒ¨ç”¨é–¢æ•°ã€‚ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ã‚’ä¸ãˆã‚‰ã‚ŒãŸæ–¹å‘ã«é€²ã‚ã‚‹ã€‚
 	 * @param move
-	 * @param undoing æ‚èÁ‚µ‘€ì‚É‚æ‚éˆÚ“®‚©’Êí‘€ì‚É‚æ‚éˆÚ“®‚©‚ğ•Ô‚·
+	 * @param undoing å–ã‚Šæ¶ˆã—æ“ä½œã«ã‚ˆã‚‹ç§»å‹•ã‹é€šå¸¸æ“ä½œã«ã‚ˆã‚‹ç§»å‹•ã‹ã‚’è¿”ã™
 	 */
 	private void doMove(Move move, boolean undoing) {
 		Position posPlayer = getPlayerPosition();
@@ -115,7 +115,7 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		}
 	}
 	/**
-	 * “ñ“_‚ÌƒZƒ‹ã‚ÌƒIƒuƒWƒFƒNƒg‚ğŒğŠ·‚·‚éB
+	 * äºŒç‚¹ã®ã‚»ãƒ«ä¸Šã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’äº¤æ›ã™ã‚‹ã€‚
 	 * @param pos1
 	 * @param pos2
 	 */
@@ -127,10 +127,10 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		cell2.setObject(temp);
 	}
 	/**
-	 * ƒvƒŒ[ƒ„[‚ª{@code delta}‚¾‚¯ˆÚ“®‚·‚é‚½‚ß‚Ì{@link Move}ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·B
-	 * ˆÚ“®‚Å‚«‚È‚¢ê‡‚Í{@code null}‚ğ•Ô‚·B
-	 * @param delta ˆÚ“®·•ª
-	 * @return ƒvƒŒ[ƒ„[‚ª{@code delta}‚¾‚¯ˆÚ“®‚·‚é‚½‚ß‚Ì{@link Move}ƒIƒuƒWƒFƒNƒg
+	 * ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ãŒ{@code delta}ã ã‘ç§»å‹•ã™ã‚‹ãŸã‚ã®{@link Move}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™ã€‚
+	 * ç§»å‹•ã§ããªã„å ´åˆã¯{@code null}ã‚’è¿”ã™ã€‚
+	 * @param delta ç§»å‹•å·®åˆ†
+	 * @return ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ãŒ{@code delta}ã ã‘ç§»å‹•ã™ã‚‹ãŸã‚ã®{@link Move}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	private Move getMove(Position delta) {
 		Position player = getPlayerPosition();
@@ -158,8 +158,8 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		}
 	}
 	/**
-	 * Œ»İ‚ÌƒvƒŒ[ƒ„[‚ÌˆÊ’u‚ğ•Ô‚·
-	 * @return Œ»İ‚ÌƒvƒŒ[ƒ„[‚ÌˆÊ’u
+	 * ç¾åœ¨ã®ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ã®ä½ç½®ã‚’è¿”ã™
+	 * @return ç¾åœ¨ã®ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ã®ä½ç½®
 	 */
 	private Position getPlayerPosition() {
 		for (Cell[] row : cells) {
@@ -173,7 +173,7 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 	}
 
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -189,7 +189,7 @@ public class StoreKeeper implements Iterable<Iterable<Cell>> {
 		return builder.toString();
 	}
 	/*
-	 * (”ñ Javadoc)
+	 * (é Javadoc)
 	 * @see java.lang.Iterable#iterator()
 	 */
 	@Override

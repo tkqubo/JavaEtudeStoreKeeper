@@ -1,16 +1,16 @@
 package com.qubo.challenge.storekeeper.elements;
 
 /**
- * ƒtƒB[ƒ‹ƒh’nŒ`‚ğ•\Œ»‚µ‚½—ñ‹“Œ^
+ * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰åœ°å½¢ã‚’è¡¨ç¾ã—ãŸåˆ—æŒ™å‹
  * @author Qubo
  */
 public enum Terrain {
 	/**
-	 * •Ç
+	 * å£
 	 */
 	Wall,
 	/**
-	 * ‰×•¨’u‚«ê
+	 * è·ç‰©ç½®ãå ´
 	 */
 	Dest,
 	;

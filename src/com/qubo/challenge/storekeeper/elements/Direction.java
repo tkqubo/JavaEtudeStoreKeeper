@@ -1,29 +1,29 @@
 package com.qubo.challenge.storekeeper.elements;
 
 /**
- * ã‰º¶‰E‚Ìis•ûŒü‚ğ•\‚·—ñ‹“Œ^
+ * ä¸Šä¸‹å·¦å³ã®é€²è¡Œæ–¹å‘ã‚’è¡¨ã™åˆ—æŒ™å‹
  * @author Qubo
  */
 public enum Direction {
 	/**
-	 * ã
+	 * ä¸Š
 	 */
 	Up { @Override Position toPosition() { return Position.UP; } },
 	/**
-	 * ‰º
+	 * ä¸‹
 	 */
 	Down { @Override Position toPosition() { return Position.DOWN; } },
 	/**
-	 * ‰E
+	 * å³
 	 */
 	Right { @Override Position toPosition() { return Position.RIGHT; } },
 	/**
-	 * ¶
+	 * å·¦
 	 */
 	Left { @Override Position toPosition() { return Position.LEFT; } },
 	;
 	/**
-	 * is•ûŒü‚Ö‚Ì1ƒZƒ‹•ª‚ÌˆÚ“®‚ğ•\‚·{@link Position}ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·B
+	 * é€²è¡Œæ–¹å‘ã¸ã®1ã‚»ãƒ«åˆ†ã®ç§»å‹•ã‚’è¡¨ã™{@link Position}ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™ã€‚
 	 * @return
 	 */
 	abstract Position toPosition();

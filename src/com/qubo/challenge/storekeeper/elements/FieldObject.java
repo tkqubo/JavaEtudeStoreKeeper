@@ -1,17 +1,17 @@
 package com.qubo.challenge.storekeeper.elements;
 
 /**
- * ƒQ[ƒ€ƒ}ƒbƒvã‚Ì—v‘f‚ğ•\‚µ‚½—ñ‹“Œ^
+ * ã‚²ãƒ¼ãƒ ãƒãƒƒãƒ—ä¸Šã®è¦ç´ ã‚’è¡¨ã—ãŸåˆ—æŒ™å‹
  * @author Qubo
  *
  */
 public enum FieldObject {
 	/**
-	 * ‰×•¨
+	 * è·ç‰©
 	 */
 	Stuff,
 	/**
-	 * ƒvƒŒ[ƒ„[
+	 * ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼
 	 */
 	Player,
 	;
